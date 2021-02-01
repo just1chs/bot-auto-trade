@@ -1,0 +1,171 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+/* -- NAVIGATION -- */
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    background: #000;
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media screen and  (max-width: 550px){
+    nav li{
+        margin: 0 8px;
+    }
+        
+    nav a {
+        font-size: 15px;
+    }
+}    
+/* -- BOT -- */
+
+.hero{
+    height: 800px;
+    display: flex;
+    overflow: hidden;   
+}
+
+.bot-center{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: #000;
+    box-shadow: 90px 0 100px #000;
+}
+
+h1{
+    color: #f1f1f1;
+    font-size: 90px;
+    padding-top: 200px;
+    padding-bottom: 20px;
+    margin-left: 8vw;
+    white-space: nowrap;
+}
+
+.hero p{
+    color: #f1f1f1;
+    font-size: 30px;
+    width: 600px;
+    margin-left: 8vw;
+    line-height: 1.3;
+}
+
+.btn-hero{
+    display: flex;
+}
+
+.btn-bot{
+    font-size: 18px;
+    text-align: center;
+    color: #f1f1f1;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 40px;
+    border: 1px solid #f1f1f1;
+    width: 150px;
+    cursor: pointer;
+}
+
+.btn-bot:hover{
+    transition: all 0.2s ease;
+    color: #000;
+    background: #f1f1f1;
+}
+
+.btn-bot{
+    margin-left: 13vw;
+}
+
+.bot-right {
+    background-image: url(images/bot.jpg);
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: 45% 20%;
+}
+
+@media screen and (max-witdh: 1350px){
+    .bot-center{
+        width: 60%;
+    }
+    .bot-right{
+        background-position: 45% 20%;
+    }
+}
+
+@media screen and (max-witdh: 750px){
+.hero{
+    height: 600px;
+}
+h1{
+    font-size: 50px;
+    padding-top: 120px;
+}
+.hero p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.btn-bot{
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 20px;
+}
+.bot-center{
+    width: 50%;
+}
+}
+
+@media screen and (max-witdh: 550px){
+.hero{
+    height: 450px;
+}
+h1{
+    font-size: 40px;
+    padding-top: 100px;
+    margin-left: 2vw;
+}
+.hero p{
+    font-size: 20px;
+    margin-left: 2vw;
+    margin-bottom: 15px;
+}
+.btn-bot{
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 2vw;
+}
+.bot-center{
+    box-shadow: 20px 0 100px 100px #000;
+    width: 40%;
+}
+}
